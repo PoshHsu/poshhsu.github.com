@@ -1,4 +1,4 @@
 My GitHub Page
 ==============
 
-For now, it display "Hello, My GitHub Page!" only.
+Now it has a simple Google Web Fonts demo.
