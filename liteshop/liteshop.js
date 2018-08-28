@@ -28,7 +28,7 @@
       return pattern.test(emailAddress);
     };
 
-    jQuery('head').append('<link rel="stylesheet" href="http://poshhsu.github.io/liteshop/liteshop.css?201808282321" type="text/css" />');
+    jQuery('head').append('<link rel="stylesheet" href="https://poshhsu.github.io/liteshop/liteshop.css?201808282321" type="text/css" />');
     jQuery('head').append('<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />');
     function createCookie(name, value, days) {
       var expires;
