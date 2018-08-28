@@ -1,0 +1,542 @@
+.liteshop-order-container {
+  padding: 35px;
+  margin: 30px 15px;
+  font-size: 15px;
+  text-align: left;
+  background: #FFF;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15)
+}
+
+@media screen and (max-width: 767px) {
+  .liteshop-order-container {
+    padding: 5px;
+    margin: 0;
+    box-shadow: 0 0 0 transparent
+  }
+}
+
+.liteshop-order-container>.cartdetail-wrapper {
+  max-width: 600px;
+  margin: 0 auto
+}
+
+.liteshop-order-container * {
+  box-sizing: border-box
+}
+
+.liteshop-order-container h3.form-heading {
+  margin: 0 0 15px;
+  font-size: 1.8em;
+  font-weight: 600;
+  line-height: 1.3;
+  color: #333
+}
+
+@media screen and (max-width: 767px) {
+  .liteshop-order-container h3.form-heading {
+    font-size: 1.5em
+  }
+}
+
+.liteshop-order-container h4.form-heading-descript {
+  margin: 0 0 25px;
+  font-size: 1.1em;
+  font-weight: 300;
+  line-height: 1.4;
+  color: #666
+}
+
+.liteshop-order-container h5.section-title {
+  margin: 0 0 25px;
+  font-size: 1.3em;
+  font-weight: 300;
+  color: #333
+}
+
+.liteshop-order-container .liteshop-form-group {
+  position: relative;
+  width: auto;
+  height: 48px;
+  padding: 0 !important;
+  margin-bottom: 15px;
+  background: #FFF;
+  border: 1px solid #DEDEDE;
+  border-radius: 4px;
+  transition: all 0.3s linear
+}
+
+.liteshop-order-container .liteshop-form-group.form-select:after,
+.liteshop-order-container .liteshop-form-group.form-default-value:after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale
+}
+
+.liteshop-order-container .liteshop-form-group.form-select .liteshop-form-label,
+.liteshop-order-container .liteshop-form-group.form-default-value .liteshop-form-label {
+  opacity: 1
+}
+
+.liteshop-order-container .liteshop-form-group.form-select .liteshop-form-control,
+.liteshop-order-container .liteshop-form-group.form-default-value .liteshop-form-control {
+  padding: 21px 15px 4px 15px !important;
+  font-weight: 600
+}
+
+.liteshop-order-container .liteshop-form-group:hover {
+  border-color: #3992EA
+}
+
+.liteshop-order-container .row {
+  margin-left: -5px;
+  margin-right: -5px
+}
+
+.liteshop-order-container .row:after {
+  content: " ";
+  display: table;
+  clear: both
+}
+
+.liteshop-order-container .col-6 {
+  float: left;
+  width: 50%;
+  padding: 0 5px
+}
+
+@media screen and (max-width: 767px) {
+  .liteshop-order-container .col-6 {
+    float: none;
+    width: 100%
+  }
+}
+
+.liteshop-order-container .liteshop-form-label {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  padding-left: 15px;
+  margin: 0;
+  overflow: hidden;
+  font-size: 0.8em;
+  font-weight: normal;
+  line-height: 20px;
+  color: #a8abb1;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  opacity: 0;
+  transition: all 0.1s linear;
+  pointer-events: none
+}
+
+.liteshop-order-container .liteshop-form-control {
+  display: block;
+  width: 100%;
+  padding: 12px 15px;
+  margin: 0;
+  font-size: 1em;
+  line-height: 20px;
+  word-break: normal;
+  background: transparent;
+  border: 0;
+  transition: all 0.1s linear;
+  -webkit-appearance: none;
+  -webkit-font-smoothing: inherit
+}
+
+.liteshop-order-container .liteshop-form-control:focus {
+  border-color: #3992EA;
+  outline: none;
+  box-shadow: 0 0 3px rgba(57, 146, 234, 0.1)
+}
+
+.liteshop-btn {
+  display: inline-block;
+  padding: 12px;
+  margin-bottom: 0;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  white-space: nowrap;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  transition: all 0.1s linear
+}
+
+.liteshop-btn:hover,
+.liteshop-btn:focus,
+.liteshop-btn:active,
+.liteshop-btn.active {
+  outline: none
+}
+
+@media screen and (max-width: 767px) {
+  .liteshop-btn {
+    width: 100%
+  }
+}
+
+.liteshop-btn+.liteshop-btn {
+  margin-left: 8px
+}
+
+@media screen and (max-width: 767px) {
+  .liteshop-btn+.liteshop-btn {
+    margin-top: 15px;
+    margin-left: 0
+  }
+}
+
+.liteshop-btn.btn-default {
+  color: #FFF;
+  background: #656872
+}
+
+.liteshop-btn.btn-default:hover,
+.liteshop-btn.btn-default:focus,
+.liteshop-btn.btn-default:active,
+.liteshop-btn.btn-default.active {
+  background: #717480
+}
+
+.liteshop-btn.btn-link {
+  color: #656872;
+  text-decoration: none !important;
+  background: transparent;
+  border: 1px solid #d8d9da;
+  border-radius: 4px
+}
+
+.liteshop-btn.btn-link:hover,
+.liteshop-btn.btn-link:active,
+.liteshop-btn.btn-link.active {
+  color: #333;
+  background: #e9ebf1;
+  border-color: #c4c9d6
+}
+
+.liteshop-btn.btn-link:focus {
+  color: #333;
+  border-color: #c4c9d6
+}
+
+.liteshop-btn.btn-add-cart {
+  color: #FFFFFF;
+  background: #3992EA
+}
+
+.liteshop-btn.btn-add-cart:hover,
+.liteshop-btn.btn-add-cart:focus,
+.liteshop-btn.btn-add-cart:active,
+.liteshop-btn.btn-add-cart.active {
+  background: #509fec
+}
+
+.liteshop-btn.btn-add-cart[disabled] {
+  cursor: not-allowed;
+  opacity: 0.4
+}
+
+.liteshop-btn.liteshop-checkout-btn {
+  position: relative;
+  color: #FFFFFF;
+  background: #FF554D
+}
+
+.liteshop-btn.liteshop-checkout-btn:hover,
+.liteshop-btn.liteshop-checkout-btn:focus,
+.liteshop-btn.liteshop-checkout-btn:active,
+.liteshop-btn.liteshop-checkout-btn.active {
+  background: #ff6d67
+}
+
+.liteshop-btn.liteshop-checkout-btn[disabled] {
+  cursor: not-allowed;
+  opacity: 0.4
+}
+
+.liteshop-btn.disabled {
+  color: #C2C2C2;
+  cursor: not-allowed;
+  background: #EEE
+}
+
+.liteshop-btn.disabled:hover,
+.liteshop-btn.disabled:focus,
+.liteshop-btn.disabled:active,
+.liteshop-btn.disabled.active {
+  color: #C2C2C2;
+  background: #EEE
+}
+
+.liteshop-btn * {
+  box-sizing: border-box
+}
+
+.liteshop-btn .ls-badge {
+  display: inline-block;
+  min-width: 25px;
+  padding: 0 8px;
+  margin-left: 5px;
+  font-size: 0.9em;
+  color: #FFF;
+  background: rgba(0, 0, 0, 0.15);
+  border-radius: 40px;
+  box-shadow: -1px -1px 0px rgba(255, 255, 255, 0.1), inset 1px 1px 3px rgba(0, 0, 0, 0.1)
+}
+
+.cart-btn-wrap * {
+  box-sizing: border-box
+}
+
+.cart-btn-wrap .btn-warp {
+  margin-right: -5px;
+  margin-left: -5px
+}
+
+.cart-btn-wrap .btn-warp:after {
+  content: "";
+  display: table;
+  clear: both
+}
+
+.cart-btn-wrap .btn-warp .btn-group {
+  float: left;
+  width: 40%;
+  padding-right: 5px;
+  padding-left: 5px
+}
+
+@media screen and (max-width: 767px) {
+  .cart-btn-wrap .btn-warp .btn-group {
+    float: none;
+    width: 100%
+  }
+}
+
+.cart-btn-wrap .btn-warp .btn-group:last-child {
+  width: 20%
+}
+
+@media screen and (max-width: 767px) {
+  .cart-btn-wrap .btn-warp .btn-group:last-child {
+    float: none;
+    width: 100%
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .cart-btn-wrap .btn-warp .btn-group+.btn-group {
+    margin-top: 15px
+  }
+}
+
+.cart-btn-wrap .btn-warp .btn-group .liteshop-btn {
+  width: 100%
+}
+
+.cart-footer {
+  margin-top: 15px !important;
+  overflow: hidden !important;
+  line-height: 1.42857143 !important;
+  text-align: right !important
+}
+
+.cart-footer img {
+  width: 60px !important;
+  padding: 0 !important;
+  margin: 2px 0 0 !important;
+  vertical-align: middle !important;
+  border: none !important;
+  border-radius: 0 !important
+}
+
+.cart-footer span {
+  margin-right: 6px !important;
+  font-size: 12px !important;
+  line-height: 14px !important;
+  color: #a8abb1 !important;
+  vertical-align: text-bottom !important
+}
+
+.liteshop-cart {
+  position: relative
+}
+
+.liteshop-cart:before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  right: 50px;
+  display: block;
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid #ECECEC
+}
+
+.liteshop-cart.showIt {
+  position: relative;
+  height: auto;
+  opacity: 1;
+  visibility: visible
+}
+
+.liteshop-cart.hideIt {
+  overflow: hidden
+}
+
+.liteshop-cart.hideNow {
+  display: none;
+  height: 0;
+  opacity: 0;
+  visibility: hidden
+}
+
+.liteshop-cart * {
+  box-sizing: border-box
+}
+
+.liteshop-table {
+  width: 100%;
+  max-width: 100%;
+  margin-top: 15px;
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 1px solid #ECECEC
+}
+
+.liteshop-table.cartdetail>thead {
+  background: #f3f3f5
+}
+
+.liteshop-table.cartdetail>thead>tr>th {
+  padding: 10px 8px;
+  text-align: left
+}
+
+.liteshop-table.cartdetail>thead>tr>th.store-name {
+  font-size: 1.12em;
+  font-weight: 800;
+  color: #187ee2
+}
+
+.liteshop-table.cartdetail>tfoot {
+  background: #f3f3f5
+}
+
+.liteshop-table.cartdetail>tbody>tr,
+.liteshop-table.cartdetail>tfoot>tr {
+  border-bottom: 1px solid #ECECEC
+}
+
+.liteshop-table.cartdetail>tbody>tr:last-child,
+.liteshop-table.cartdetail>tfoot>tr:last-child {
+  border-bottom: 0
+}
+
+.liteshop-table.cartdetail>tbody>tr td.subtotal,
+.liteshop-table.cartdetail>tfoot>tr td.subtotal {
+  text-align: right
+}
+
+@media screen and (max-width: 767px) {
+  .liteshop-table.cartdetail>tbody>tr td.subtotal,
+  .liteshop-table.cartdetail>tfoot>tr td.subtotal {
+    width: 80px
+  }
+}
+
+.liteshop-table.cartdetail>tbody>tr td.total-price,
+.liteshop-table.cartdetail>tfoot>tr td.total-price {
+  font-weight: 600;
+  color: #FF554D;
+  text-align: right
+}
+
+.liteshop-table.cartdetail small {
+  font-size: 0.8em
+}
+
+.liteshop-table.cartdetail th,
+.liteshop-table.cartdetail td {
+  padding: 8px;
+  line-height: 20px
+}
+
+.liteshop-table.cartdetail .product-name .ls-name {
+  font-size: 0.85em;
+  color: #888
+}
+
+@media screen and (max-width: 767px) {
+  .liteshop-table.cartdetail .product-name .ls-name {
+    font-size: 0.9em
+  }
+}
+
+.liteshop-table.cartdetail .product-name .ls-type {
+  font-weight: 600;
+  color: #333
+}
+
+@media screen and (max-width: 767px) {
+  .liteshop-table.cartdetail .product-name .ls-type {
+    font-size: 1.1em
+  }
+}
+
+.liteshop-table * {
+  box-sizing: border-box
+}
+
+.liteshop-btn.openCart {
+  position: relative;
+  padding-right: 28px
+}
+
+.liteshop-btn.openCart:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: inline-block;
+  width: 28px;
+  padding-top: 12px;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  background: rgba(101, 104, 114, 0.08);
+  border-left: 1px solid #dadde4;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale
+}
+
+.liteshop-btn.openCart.in:after {
+  content: ""
+}
+
+.liteshop-btn * {
+  box-sizing: border-box
+}
