@@ -2,15 +2,35 @@
 <html>
   <head>
     <title>Posh - Still borning here :(</title>
-    <link href='http://fonts.googleapis.com/css?family=Cagliostro'
-          rel='stylesheet' type='text/css'>
-    <style>
-      body { font-family: 'Cagliostro', sans-serif; }
-    </style>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+    <meta content="width=device-width,initial-scale=1.0,user-scalable=yes,minimum-scale=1.0,maximum-scale=3.0" id="viewport" name="viewport">
   </head>
   <body>
-    <h1>
-      <a href="http://www.google.com/webfonts#HomePlace:home">Google Web Fonts Rocks!</a>
-    </h1>
+    <div id="liteshop-order-form-810"></div>
+    <script type='text/javascript'>
+      var checkReady = function (callback) {
+        if (window.jQuery) {
+          callback(jQuery);
+        } else {
+          var jq = document.createElement('script');
+          jq.src = "https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js";
+          jq.type = 'text/javascript';
+          document.getElementsByTagName('head')[0].appendChild(jq);
+          window.setTimeout(function () {
+            checkReady(callback);
+          }, 100);
+        }
+      };
+      checkReady(function ($) {
+        jQuery.getScript("./liteshop/liteshop.js", function () {
+          jQuery('#liteshop-order-form-810')
+            .liteshop({
+              "u":"KbvSph",
+              "notify":"無",
+              "product_token":"VePbAYcVeqgpH83jgJmpn6xs"
+            });
+        });
+      });
+    </script>
   </body>
 </html>
