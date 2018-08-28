@@ -3,7 +3,7 @@
   margin: 30px 15px;
   font-size: 15px;
   text-align: left;
-  background: #FFF;
+  background: #0096ff;
   border-radius: 8px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.15)
 }
@@ -108,7 +108,7 @@
 
 .liteshop-order-container .col-6 {
   float: left;
-  width: 50%;
+  width: 30%;
   padding: 0 5px
 }
 
@@ -241,7 +241,7 @@
 
 .liteshop-btn.btn-add-cart {
   color: #FFFFFF;
-  background: #3992EA
+  background: #24CDB8;
 }
 
 .liteshop-btn.btn-add-cart:hover,
