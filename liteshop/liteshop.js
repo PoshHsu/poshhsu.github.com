@@ -159,8 +159,8 @@
         console.log(data);
         var _select;
         var _quantity_select = jQuery("<select id='productQuantity' class='liteshop-form-control liteshop-quantity-select'></select>");
-        var _open_cart_detail = jQuery("<button class='liteshop-btn btn-link openCart' data-toggle='LScollapse' data-target='.lsShopCart' data-expanded='no'>��𡒊敦</button>")
-        var _add_to_cart = jQuery("<button class='liteshop-btn btn-add-cart'>��惩�亥頃��頠�</button>")
+        var _open_cart_detail = jQuery("<button class='liteshop-btn btn-link openCart' data-toggle='LScollapse' data-target='.lsShopCart' data-expanded='no'>明細</button>")
+        var _add_to_cart = jQuery("<button class='liteshop-btn btn-add-cart'>加入購物車</button>")
         jQuery(_target_form_div).wrap("<div class='liteshop-order-container'></div>")
 
         if(data.success != true){
@@ -180,13 +180,13 @@
             jQuery(_option).data("stock", _variant_data[i].stock);
             _select.append(_option)
           }
-          jQuery(_target_form_div).addClass('cartdetail-wrapper').append("<h3 class='form-heading'>鞈潸眺��"+data.product_title+"��</h3>").append("<h4 class='form-heading-descript'>隢钅�豢��炬鞈潸眺���������彍��𧶏��朖�虾��惩�亥頃��頠𠰴�𣬚�𣂼董��</h4>");
+          jQuery(_target_form_div).addClass('cartdetail-wrapper').append("<h3 class='form-heading'>購買『"+data.product_title+"』</h3>").append("<h4 class='form-heading-descript'>請選擇欲購買的商品與數量，即可加入購物車後結帳。</h4>");
 
           jQuery(_target_form_div).append(_select);
-          jQuery(_select).wrap("<div class='col-6'></div>").wrap("<div class='liteshop-form-group form-select'></div>").parent().prepend("<label class='liteshop-form-label label-at-top' for='productName'>����璅���</lable>");
+          jQuery(_select).wrap("<div class='col-6'></div>").wrap("<div class='liteshop-form-group form-select'></div>").parent().prepend("<label class='liteshop-form-label label-at-top' for='productName'>商品樣式</label>");
 
           jQuery(_target_form_div).append(_quantity_select);
-          jQuery(_quantity_select).wrap("<div class='col-6'></div>").wrap("<div class='liteshop-form-group form-select'></div>").parent().prepend("<label class='liteshop-form-label label-at-top' for='productQuantity'>鞈潸眺�彍���"+(data.limit_purchase ? "  (��鞱頃"+data.limit_purchase+")" : "")+"</lable>");
+          jQuery(_quantity_select).wrap("<div class='col-6'></div>").wrap("<div class='liteshop-form-group form-select'></div>").parent().prepend("<label class='liteshop-form-label label-at-top' for='productQuantity'>購買數量"+(data.limit_purchase ? "  (��鞱頃"+data.limit_purchase+")" : "")+"</lable>");
           jQuery(_target_form_div).find( ".col-6" ).wrapAll( "<div class='row'></div>" );
           if(_variant_data[0].stock < 1 && !data.allow_preorder){
             jQuery(_quantity_select).append("<option value='0'>撌脣睸摰�</option>")
@@ -238,7 +238,7 @@
           }
         })
 
-        var _send_cart = jQuery("<a class='liteshop-btn liteshop-checkout-btn' href='"+_url+"carts/new'>蝯𣂼董<span class='ls-badge'></span></a>")
+        var _send_cart = jQuery("<a class='liteshop-btn liteshop-checkout-btn' href='"+_url+"carts/new'>結帳<span class='ls-badge'></span></a>")
         jQuery(_send_cart).on('click',function(event){
           event.preventDefault();
           var final_url = new URL(this.href)
@@ -259,7 +259,7 @@
         jQuery(_target_form_div).find(".btn-group").wrapAll("<div class='btn-warp'></div>");
         jQuery(_target_form_div).find(".cart-btn-wrap").append("<div class='liteshop-cart hideNow lsShopCart' id=''><table class='liteshop-table cartdetail'> <thead> </table></div>");
         jQuery(_target_form_div).append("<div class='cart-footer'></div>");
-        jQuery(_target_form_div).find(".cart-footer").append("<span>Powered by</span><a href='//liteshop.tw' target='_blank' title='Powered by LiteShop 頛閖𤓖��'><img src='"+_url+"assets/liteshop-logo.png'></a>");
+        jQuery(_target_form_div).find(".cart-footer").append("<span>Powered by</span><a href='//liteshop.tw' target='_blank' title='Powered by LiteShop 輕電商'><img src='"+_url+"assets/liteshop-logo.png'></a>");
 
         jQuery(_open_cart_detail).on("click", function(){
           var collapseTarget = jQuery(this).attr("data-target")
@@ -294,4 +294,3 @@
     });
   };
 }).call(this);;
-
